@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        眠貓咖啡屋
+    </title>
+    <link rel="stylesheet" href="../CSS/normalize.css">
+    <link rel="stylesheet" href="../CSS/home.css">
+    <style>
+        /* 設定 h1~h6 的字體大小 */
+        h1 {
+            font-size: 56px;
+            /* 可依需求調整大小 */
+        }
+
+        h2 {
+            font-size: 44px;
+            /* 可依需求調整大小 */
+        }
+
+        h3 {
+            font-size: 36px;
+            /* 可依需求調整大小 */
+        }
+
+        h4 {
+            font-size: 24px;
+            /* 可依需求調整大小 */
+        }
+
+        h5 {
+            font-size: 20px;
+            /* 可依需求調整大小 */
+        }
+
+        h6 {
+            font-size: 18px;
+            /* 可依需求調整大小 */
+        }
+        p{
+            font-size: 14px;
+        }
+        ::selection {
+            background-color: #f9e9b5; /* 橘色背景 */
+            color: #9a802c; /* 白色文字 */
+        }
+    </style>
+
+</head>
+
+<body onbeforeunload="window.scrollTo(0, 0)">
+    <!-- Logo & 店名(navbar 導覽列) & first picture-->
+
+    <!-- navbar 導覽列-->
+    <header>
+        <!-- 新版導覽列 -->
+        <div class="navbar">
+            <a href="#" class="logo">
+                <img src="../images/logo b.png" alt="logo main">
+            </a>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="home.html" class="nav-text">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="menu.html" class="nav-text">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a href="reservation.html" class="nav-text">Reservation</a>
+                </li>
+                <li class="nav-item"><a href="info.html" class="nav-text">Info</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- end navbar-->
+
+    <!-- 首圖動畫 start-->
+    <label>
+        <!--提醒切斷文字-->
+        <input type="checkbox"/>
+        <div class="scene">
+            <!--太陽月亮-->
+            <div class="sun"></div>
+            <div class="moon"></div>
+            <!-- 上方文字 -->
+            <div class="first-L-title">
+                <a href="#" class="container-logo">
+                    <img class="nightimg" src="../images/logo w.png" alt="logo">
+                    <img class="dayimg" src="../images/logo b.png" alt="logo">
+                </a>
+                <div class="container-headline">
+                    <span class="common-headline__title">眠</span>
+                    <span class="common-headline__title">貓</span>
+                    <span class="common-headline__title">咖</span>
+                    <span class="common-headline__title">啡</span>
+                    <span class="common-headline__title">屋</span>
+                </div>
+                <span class="s-text">Click to change the day&night</span>
+            </div>
+        <div>
+            <!-- <img class="cafe-house" src="../images/house.png" alt="cafe house"> -->
+        </div>
+
+        <!--星星-->
+        <div class="allstars">
+            <div class="star1"></div>
+            <div class="star2"></div>
+            <div class="star3"></div>
+            <div class="star4"></div>
+            <div class="star5"></div>
+            <div class="star6"></div>
+            <div class="star7"></div>
+            <div class="star8"></div>
+            <div class="star9"></div>
+            <div class="star10"></div>
+            <div class="star11"></div>
+            <div class="star12"></div>
+            <div class="star13"></div>
+            <div class="star14"></div>
+            <div class="star15"></div>
+            <div class="star16"></div>
+            <div class="star17"></div>
+            <div class="star18"></div>
+            <div class="star19"></div>
+            <div class="star20"></div>
+            <div class="star21"></div>
+            <div class="star22"></div>
+            <div class="star23"></div>
+            <div class="star24"></div>
+            <div class="star25"></div>
+            <div class="star26"></div>
+            <div class="star27"></div>
+            <div class="star28"></div>
+            <div class="star29"></div>
+            <div class="star30"></div>
+            <div class="star31"></div>
+        </div>
+        
+        </div>
+    </label>
+    <!-- 首圖動畫 end -->
+
+    <!-- about~specials是同張背景圖 -->
+    <!-- 小建議:可以將about~specials的內容放置在一個container裡面，方便調整區塊大小又不會動到背景 -->
+    <div class="about-specials">
+        <!-- About -->
+        <div class="about">
+            <!-- title -->
+            <h3 class="about-title">About</h3>
+            <!-- stars & lines -->
+            <img src="../images/star_white.svg" alt="star_white">
+            <!-- picture -->
+            <img class="about-img" src="../images/home_about-v2.png " alt="about" width="" height="">
+            <!-- 重疊漂浮框 -->
+            <!-- picture info -->
+            <h3>Picture Info</h3>
+            <!-- intro -->
+            <h4>Whether you're looking for an intimate dinner, a casual lunch, or a weekend brunch.</h4>
+            <!-- button -->
+            <!-- 文字:More -->
+            <h3>More</h3>
+        </div>
+
+        <!-- Specials -->
+        <div class="specials">
+            <!-- title -->
+            <h2 class="specials-title">Specials</h2>
+            <!-- stars & lines -->
+            <img src="../images/star_white.svg" alt="star_white" width="" height="">
+            <!-- picture -->
+
+            <!-- 重疊漂浮框 -->
+            <!-- picture info -->
+            <h3>Picture Info</h3>
+            <!-- intro -->
+            <h4>Whether you're looking for an intimate dinner, a casual lunch, or a weekend brunch.</h4>
+            <!-- button -->
+            <!-- 文字:More -->
+            <a href="#!" class="btn-setting-more btn-more btn-moresize">More</a>
+            <!-- <h3>More</h3> -->
+        </div>
+    </div>
+    
+    <!-- Reservation -->
+    <div class="reservation">
+        <!-- 背景遮罩 -->
+        <div class="mask-dark"></div>
+    
+        <!-- title -->
+        <h2 class="reservation-title">Reservation</h2>
+    
+        <!-- stars & lines -->
+        <img src="../images/star_white.svg" alt="star_white">
+    
+        <!-- 等待光臨 -->
+        <h3>我們誠摯的等待您的光臨</h3>
+    
+        <!-- button -->
+        <a href="#!" class="btn btn-primary btn-lg">我要訂位</a>
+    </div>
+    <!-- end reservation-->
+    
+    <!-- Map -->
+    <div class="map">
+        <!-- title -->
+        <h2 class="map-title">Map</h2>
+        <!-- stars & lines -->
+        <img src="../images/star_white.svg" alt="star_white" width="" height="">
+        <div class="contactngoogle">
+            <!-- 左邊文字 -->
+            <!-- 字&線 -->
+            <div class="contact-text">
+                <h4>PHONE & TEL</h4>
+                <hr>
+                <h5>0912-345-678</h5>
+                <br>
+                <h4>LOCATION</h4>
+                <hr>
+                <h5>台北市大安區和平東路二段134號</h5>
+                <br>
+                <h4>HOURS</h4>
+                <hr>
+                <h5>上午10:00至下午9:30，周五公休</h5>
+            </div>
+            <!-- google map -->
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.2784017805598!2d121.5446374!3d25.0246244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a908a8232611%3A0xeebfb2d71a5025c7!2z5ZyL56uL6Ie65YyX5pWZ6IKy5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1729801252841!5m2!1szh-TW!2stw"
+                width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" class="googlemap"></iframe>
+        </div>
+    </div>
+    <!-- end map-->
+
+    <!-- footer -->
+    <footer>
+        <p>copyright © 2024</p>
+        <!-- icons -->
+        <div class="icons">
+            <a href="https://www.facebook.com/">
+                <img class="icon-item" src="../images/fb.svg" alt="fb" width="56px" height="56px">
+            </a>
+            <a href="https://www.instagram.com/">
+            <img class="icon-item" src="../images/ins.svg" alt="ig" width="56px" height="56px">
+            </a>
+            <a href="mailto:example@example.com">
+            <img class="icon-item" src="../images/mail.svg" alt="mail" width="56px" height="56px">
+            </a>
+        </div>
+    </footer>
+    <!-- end footer-->
+</body>
+
+</html>
+
+<!-- mail icon因圖片非正方形，改70*55 -->
