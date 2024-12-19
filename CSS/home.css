@@ -73,7 +73,7 @@ p{
     --w-navbar: 80px;
     
     --sunmoon-size:90px;
-    --sunmoon-height: 23%;
+    --sunmoon-height: 21%;
     --first-logo-height: 62%;
     /* --first-logo-height: calc(65% - (10vw / 2)) ; */
     
@@ -485,7 +485,7 @@ input:checked + .scene .dayimg {
     /* 容器本身定位 */
     align-items: center; /* 水平居中 */
     justify-content: center; /* 垂直居中 */
-    gap: 3.2em; /* 控制 Logo 和標題間距 */
+    gap: 2.8em; /* 控制 Logo 和標題間距 */
 
     /* 內容物定位 */
     display: flex;
@@ -881,17 +881,17 @@ input:checked + .scene .dayimg {
   border-radius: 18px;
   margin-bottom: calc(-100vw * 20 / 100); /*  for 漂浮框-1 */
 }
-.about-img::after {
+/* .about-img::after {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4); /* 黑色遮罩，透明度 40% */
-  z-index: 99; /* 确保遮罩层在图片上方 */
-  pointer-events: none; /* 避免遮罩影响用户交互 */
-}
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 99; 
+  pointer-events: none; 
+} */
 @media screen and (max-width:768px){
   .about-img{
     width:80%;
