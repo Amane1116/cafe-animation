@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/normalize.css">
+    <link rel="stylesheet" href="../CSS/info.css">
+    <script src="https://cdn.jsdelivr.net/npm/dat.gui"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <!-- 載入JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="../JS/info.js" defer></script>
+
+    <!-- js -->
+    <script src="../JS/home.js"></script>
+
+    <style>
+        /* 反白選取樣式 */
+        ::selection {
+            background-color: #f9e9b5; /* 橘色背景 */
+            color: #9a802c; /* 白色文字 */
+        }
+    </style>
+</head>
+<body>
+    <!-- navbar 導覽列-->
+    <header>
+        <!-- 新版導覽列 -->
+        <div class="navbar">
+            <a href="../index.html" class="logo">
+                <img src="../images/logo b.png" alt="logo main">
+            </a>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-text">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../HTML/menu.html" class="nav-text">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../HTML/reservation.html" class="nav-text">Reservation</a>
+                </li>
+                <li class="nav-item"><a href="../HTML/info.html" class="nav-text">Info</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- end navbar-->
+
+    <!-- 唱片 -->
+     <div class="cd-animation">
+        <canvas id="mycanvas"></canvas>
+        <img src="../images/Mask group.png"/><img>
+        <audio id="musicBg" src="https://awiclass.monoame.com/audio/ea0410353.mp3" loop="loop"></audio>
+     </div>
+    
+    <!-- 唱片 end -->
+
+    <!-- 右側文字 info -->
+    <div class="about-us">
+        <!-- title -->
+        <div class="title-template">
+            <h6 class="title-s">ABOUT</h6>
+            <div class="container-headline-content">
+                <span class="common-headline-content__title">關</span>
+                <span class="common-headline-content__title">於</span>
+                <span class="common-headline-content__title">我</span>
+                <span class="common-headline-content__title">們</span>
+            </div>
+            <!-- stars & lines -->
+            <div class="stars_lines">
+                <img src="../images/star-w.svg" alt="star_white" class="center-image">
+            </div>
+        </div>
+        <!-- end title -->
+        <div class="info-text">
+            <span class="animate-text">在這個快速運轉的世界裡，</span>
+            <span class="animate-text">眠貓咖啡屋為您提供一個專屬的庇護所，</span>
+            <span class="animate-text">讓您放慢腳步，享受屬於自己的片刻寧靜。</span>
+            <span class="animate-text">在這裡，每一杯咖啡都經過精心手工沖煮，</span>
+            <span class="animate-text">為您帶來不僅是味覺的享受，還有心靈的平靜。</span>
+        </div>
+        <script>
+            window.addEventListener("DOMContentLoaded", () => {
+            // 選取所有需要動畫的文字元素，包括 h2, h4 以及 info-text 的每一行
+            const textElements = document.querySelectorAll('.animate-text');
+    
+            // 逐一給每個元素加上動畫延遲，使它們逐個顯示
+            textElements.forEach((element, index) => {
+            element.style.animationDelay = `${index * 0.5}s`;  // 每行文字的顯示時間延遲
+    });
+});
+        </script>
+    </div>
+
+</body>
+</html>
